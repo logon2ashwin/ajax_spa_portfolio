@@ -14,11 +14,34 @@
 
   <div class="container">
         <h2><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>&nbsp&nbspLocation</h2>
-      <div id="map-container"></div>
+      <div id="map"></div>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+
+    <script>
+      function initMap() {
+        var uluru = {lat: 12.952957, lng: 80.133011};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLakoFJ7Ja9kaDOvo-Zy-0kt8io3O8i7M&callback=initMap"
+    ></script>
  
   
     
-    <script>  
+<!--    <script>  
  
       function init_map() {
       var var_location = new google.maps.LatLng(12.952957,80.133011);
@@ -42,7 +65,7 @@
         
         init_map();
  
-    </script>
+    </script>-->
 </div>
     <h2>Follow me on:</h2>
           <div class="panel-group" id="accordion">
