@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projects</title>
+	<link rel="stylesheet" href="C:\Users\clofus1\Desktop\ajax_ash\ajax_spa_portfolio\css\bootstrap.css" />
+  	<link rel="stylesheet" href="C:\Users\clofus1\Desktop\ajax_ash\ajax_spa_portfolio\css\font-awesome\css\font-awesome.css" />
+  	<script type="text/javascript" src="C:\Users\clofus1\Desktop\ajax_ash\ajax_spa_portfolio\js\jquery.js"></script>
+  	<script type="text/javascript" src="C:\Users\clofus1\Desktop\ajax_ash\ajax_spa_portfolio\js\bootstrap.js"></script>
+	<script type="text/javascript" src="C:\Users\clofus1\Desktop\ajax_ash\ajax_spa_portfolio\js\angular.js"></script>
+  	<script type="text/javascript" src="C:\Users\clofus1\Desktop\ajax_ash\ajax_spa_portfolio\js\angular-route.js"></script>
+  	<script type="text/javascript" src="C:\Users\clofus1\Desktop\ajax_ash\ajax_spa_portfolio\js\rt.js"></script>
+</head>
+<body ng-app="myApp">
+
+
+
+<div ng-controller="toggle">
+	<h1 role="button" ng-click="onClick()">Robotics</h1>
+
+	<p ng-show="show">Robotics is the interdisciplinary branch of engineering and science that includes mechanical engineering, electrical engineering, computer science, and others. Robotics deals with the design, construction, operation, and use of robots, as well as computer systems for their control, sensory feedback, and information processing.</p>
+
+
+
+
+
+
+</div>
+	<script>
+		var myApp = angular.module('myApp', []);
+
+	 	myApp.controller('toggle',function($scope){
+	  			$scope.show = false;
+	  			$scope.onClick = function(){
+
+	  				$scope.show = !$scope.show;
+	  			}
+	  					});
+		
+	</script>
+</body>
+</html>

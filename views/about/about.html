@@ -1,0 +1,83 @@
+<div class="container well" style="margin-top: 100px">
+  <h1>B.Ashwin</h1>
+</div> 
+
+<div class="container">
+  <h2>Contact Me</h2>
+      <ul class="list-group">
+        <li class="list-group-item"><i class="fa fa-address-card-o fa-2x" aria-hidden="true"  data-toggle="tooltip" data-placement="top" title="Address"></i>
+        &nbsp&nbsp&nbspNo 144,Chandran Nagar,Chromepet 600-044</li>
+        <li class="list-group-item"><i class="fa fa-phone-square fa-2x" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Mobile"></i>&nbsp&nbsp&nbsp+91-8220713983</li>
+        <li class="list-group-item"><i class="fa fa-envelope-open fa-2x" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Mail"></i>&nbsp&nbsp&nbspashwin.95b@gmail.com</li>
+      </ul>
+
+
+  <div class="container">
+        <h2><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>&nbsp&nbspLocation</h2>
+      <div id="map-container"></div>
+ 
+  
+    
+    <script>  
+ 
+      function init_map() {
+      var var_location = new google.maps.LatLng(12.952957,80.133011);
+ 
+        var var_mapoptions = {
+          center: var_location,
+          zoom: 14
+        };
+ 
+      var var_marker = new google.maps.Marker({
+      position: var_location,
+      map: var_map,
+      title:"Venice"});
+ 
+        var var_map = new google.maps.Map(document.getElementById("map-container"),
+            var_mapoptions);
+ 
+      var_marker.setMap(var_map); 
+ 
+      }
+        
+        init_map();
+ 
+    </script>
+</div>
+    <h2>Follow me on:</h2>
+          <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapse1" ><i class="fa fa-facebook fa-lg" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a>
+                        </h4>
+                      </div>
+                <div id="collapse1" class="panel-collapse collapse">
+                <div class="panel-body">fb.com/iglesiasashwin</div>
+          </div>
+          </div>
+       <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapse2"><i class="fa fa-twitter fa-lg" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">@Ashwin_sb</div>
+      </div>
+        </div>
+        <div class="panel panel-default">
+        <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapse3"><i class="fa fa-instagram fa-lg" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Instagram"></i></a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">iglesiasashwin</div>
+      </div>
+      </div>
+
+
+
+
+</div>
