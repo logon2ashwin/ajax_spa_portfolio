@@ -13,32 +13,32 @@
 
 			
 			.when('/', {
-				templateUrl : 'views/home/home.html'
+				templateUrl : 'ajax_spa_portfolio/views/home/home.html'
 				
 			})
 
 			
 			.when('/qual', {
-				templateUrl : 'views/qualification/qualification.html'
+				templateUrl : 'ajax_spa_portfolio/views/qualification/qualification.html'
 				
 			})
 
 			
 			.when('/abt', {
-				templateUrl : 'views/about/about.html'
+				templateUrl : 'ajax_spa_portfolio/views/about/about.html'
 				
 			})
 
 
 			.when('/cont', {
-				templateUrl : 'views/contact/contact.html',
+				templateUrl : 'ajax_spa_portfolio/views/contact/contact.html',
 				controller	: 'contact'
 				
 			})
 
 
 			.otherwise({
-				redirectTo:'/'
+				redirectTo:'/ajax_spa_portfolio'
 			});
 
 			$locationProvider.html5Mode(true);
