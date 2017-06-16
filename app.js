@@ -38,7 +38,7 @@
 
 
 			.otherwise({
-				redirectTo:'/ajax_spa_portfolio'
+				redirectTo:'/'
 			});
 
 			$locationProvider.html5Mode(true);
