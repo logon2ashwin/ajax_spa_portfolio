@@ -74,11 +74,11 @@ html {
 .icon-button .fa-facebook {
 	color: #3B5998;
 }
-.icon-button .fa-instagram {
+.icon-button .fa-google {
 	color: #db5a3c;
 }
 .icon-button:hover .fa-twitter,
 .icon-button:hover .fa-facebook,
-.icon-button:hover .fa-instagram {
+.icon-button:hover .fa-google {
 	color: white;
 }
