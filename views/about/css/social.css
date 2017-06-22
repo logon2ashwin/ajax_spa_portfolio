@@ -68,17 +68,17 @@ html {
 	width: 3.6rem;
 	z-index: 10;
 }
-.icon-button .icon-twitter {
+.icon-button .fa-twitter {
 	color: #4099ff;
 }
-.icon-button .icon-facebook {
+.icon-button .fa-facebook {
 	color: #3B5998;
 }
-.icon-button .icon-google-plus {
+.icon-button .fa-instagram {
 	color: #db5a3c;
 }
-.icon-button:hover .icon-twitter,
-.icon-button:hover .icon-facebook,
-.icon-button:hover .icon-google-plus {
+.icon-button:hover .fa-twitter,
+.icon-button:hover .fa-facebook,
+.icon-button:hover .fa-instagram {
 	color: white;
 }
