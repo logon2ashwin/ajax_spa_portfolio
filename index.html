@@ -44,7 +44,7 @@
    		</div>
     	<div class="collapse navbar-collapse" id="navb" ng-controller="navCtrl">
     		<ul class="nav navbar-nav">
-      			<li ng-repeat="x in navItems"><a href="{{x.adress}}" data-toggle="{{x.dataToggle}}" data-placement="{{x.dataPlacement}}" title="{{x.title}}"><span class="{{x.icon}}" aria-hidden="{{x.boolean}}"></span>{{x.name}}</a></li>
+      			<li ng-repeat="x in navItems"><a href="{{x.adress}}"  data-toggle="collapse" data-target="#navb" title="{{x.title}}"><span class="{{x.icon}}" aria-hidden="{{x.boolean}}"></span>{{x.name}}</a></li>
         </ul>
 
      		<ul class="nav navbar-nav navbar-right">
