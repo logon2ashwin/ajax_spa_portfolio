@@ -1,46 +1,23 @@
 
-	
-
-
 	var myApp = angular.module('myApp', ['ngRoute','contApp']);
-
-
-
-
-
 	myApp.config(function($routeProvider,$locationProvider) {
 		$routeProvider
-
-			
 			.when('/', {
 				templateUrl : 'views/home/home.html'
-				
 			})
-
-			
 			.when('/qual', {
-				templateUrl : 'views/qualification/qualification.html'
-				
+				templateUrl : 'modules/qualification/qualification.html'
 			})
-
-			
 			.when('/abt', {
-				templateUrl : 'views/about/about.html'
-				
+				templateUrl : 'modules/about/about.html'
 			})
-
-
 			.when('/cont', {
-				templateUrl : 'views/contact/contact.html',
+				templateUrl : 'modules/contact/contact.html',
 				controller	: 'contact'
-				
 			})
-
-
 			.otherwise({
 				redirectTo:'/'
 			});
-
 			$locationProvider.html5Mode(true);
 	});
 
