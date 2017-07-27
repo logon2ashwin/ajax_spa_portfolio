@@ -1,27 +1,6 @@
 
-	var myApp = angular.module('myApp', ['ngRoute','contApp']);
-	myApp.config(function($routeProvider,$locationProvider) {
-		$routeProvider
-			.when('/', {
-				templateUrl : 'views/home/home.html'
-			})
-			.when('/qual', {
-				templateUrl : 'modules/qualification/qualification.html'
-			})
-			.when('/abt', {
-				templateUrl : 'modules/about/about.html'
-			})
-			.when('/cont', {
-				templateUrl : 'modules/contact/contact.html',
-				controller	: 'contact'
-			})
-			.otherwise({
-				redirectTo:'/'
-			});
-			$locationProvider.html5Mode(true);
-	});
-
-	  myApp.controller('navCtrl',['$scope',function($scope){
+	var portfolio = angular.module('portfolio',['ngRoute','contApp'])
+	.controller('navCtrl',['$scope',function($scope){
 	  	$scope.navItems = 	[{ 			
 	  									name			: "  Home",
 	  									adress			: "/",
@@ -55,6 +34,28 @@
 
 	  								];
 	  								}]);
+	
+			angular.module('portfolio')
+			.config(['ngRoute',function($routeProvider,$locationProvider) {
+			$routeProvider
+				.when('/', {
+					templateUrl : 'modules/home/home.html'
+				})
+				.when('/qual', {
+					templateUrl : 'modules/qualification/index.html'
+				})
+				.when('/abt', {
+					templateUrl : 'modules/about/index.html'
+				})
+				.when('/cont', {
+					templateUrl : 'modules/contact/index.html',
+					controller	: 'contactctrl'
+				})
+				.otherwise({
+					redirectTo:'/'
+				});
+				$locationProvider.html5Mode(true);
+		}])
 
 
 /*		myApp.controller('color',['$scope',function($scope){
