@@ -1,7 +1,6 @@
-
-	var portfolio = angular.module('portfolio',['ngRoute','contApp'])
-	.controller('navCtrl',['$scope',function($scope){
-	  	$scope.navItems = 	[{ 			
+var portfolio = angular.module('portfolioapp',['ngRoute','contApp'])
+portfolio.controller('navCtrl','$scope',function($scope){
+	  	$scope.navItems = 	[			{ 			
 	  									name			: "  Home",
 	  									adress			: "/",
 	  									dataToggle		: "tooltip",
@@ -30,14 +29,12 @@
 	  									boolean			: "true",
 	  									title			: "about"
 										}
-
-
 	  								];
-	  								}]);
-	
-			angular.module('portfolio')
-			.config(['ngRoute',function($routeProvider,$locationProvider) {
-			$routeProvider
+
+	  								});
+
+portfolio.config('ngRoute',function(routeProvider,$locationProvider) {
+			routeProvider
 				.when('/', {
 					templateUrl : 'modules/home/home.html'
 				})
@@ -55,10 +52,4 @@
 					redirectTo:'/'
 				});
 				$locationProvider.html5Mode(true);
-		}])
-
-
-/*		myApp.controller('color',['$scope',function($scope){
-	  			$scope.changeCol = ['#3b5998','#0084b4','#e95950'];
-	  					}]);
-*/
+		});
